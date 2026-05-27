@@ -1,0 +1,12 @@
+# Core pipeline dependencies
+requests>=2.31.0          # HTTP calls to Open-Meteo
+pandas>=2.1.0             # Data transformation
+pyarrow>=14.0.0           # Required by BigQuery pandas integration
+
+# Google Cloud
+google-cloud-bigquery>=3.13.0
+google-cloud-bigquery-storage>=2.24.0   # Faster reads (optional but recommended)
+google-auth>=2.23.0
+
+# Optional: for running locally with a service account key
+# google-oauth2-tool is included in google-auth
